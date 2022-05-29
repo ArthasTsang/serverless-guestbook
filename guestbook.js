@@ -16,7 +16,7 @@ const guestbook = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: `${apiUrl}/entries`,
+      url: `https://5f34328a.au-syd.apigw.appdomain.cloud/guestbook/entries`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
