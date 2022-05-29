@@ -7,7 +7,7 @@ const guestbook = {
   get() {
     return $.ajax({
       type: 'GET',
-      url: `${apiUrl}/entries`,
+      url: `https://5f34328a.au-syd.apigw.appdomain.cloud/guestbook/entries`,
       dataType: 'json'
     });
   },
